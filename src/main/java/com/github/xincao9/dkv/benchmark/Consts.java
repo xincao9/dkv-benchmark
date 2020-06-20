@@ -24,4 +24,5 @@ import okhttp3.MediaType;
 public class Consts {
 
     public static final MediaType JSON = MediaType.get("application/json; charset=utf-8");
+    public static final String ENDPOINT_KV = "http://localhost:9090/kv";
 }

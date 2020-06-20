@@ -43,7 +43,7 @@ public class KVSet extends Method {
         data.put("v", value);
         RequestBody body = RequestBody.create(data.toJSONString(), Consts.JSON);
         Request request = new Request.Builder()
-                .url("http://localhost:9090/kv")
+                .url(Consts.ENDPOINT_KV)
                 .put(body)
                 .build();
         try (Response response = client.newCall(request).execute()) {

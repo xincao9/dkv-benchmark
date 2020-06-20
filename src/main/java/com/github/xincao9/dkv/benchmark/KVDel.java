@@ -26,8 +26,8 @@ import okhttp3.Response;
  *
  * @author xincao9@gmail.com
  */
-@Test(name = "kvget")
-public class KVGet extends Method {
+@Test(name = "kvdel")
+public class KVDel extends Method {
 
     private final OkHttpClient client = new OkHttpClient();
 
@@ -36,6 +36,7 @@ public class KVGet extends Method {
         Integer id = (Integer)o;
         Request request = new Request.Builder()
                 .url(String.format("%s/%d", Consts.ENDPOINT_KV, id))
+                .delete()
                 .build();
         try (Response response = client.newCall(request).execute()) {
             Logger.info(response.body().string());
