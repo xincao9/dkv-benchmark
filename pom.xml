@@ -12,7 +12,7 @@
         <fastjson.version>1.2.71</fastjson.version>
         <commons-lang3.version>3.7</commons-lang3.version>
         <ptk-core.version>1.0</ptk-core.version>
-        <okhttp.version>4.7.0</okhttp.version>
+        <okhttp.version>4.9.2</okhttp.version>
         <maven-shade-plugin.version>3.2.1</maven-shade-plugin.version>
     </properties>
     <dependencies>
